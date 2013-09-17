@@ -10,7 +10,7 @@
 		username = localStorage.getItem('username');
 		password = localStorage.getItem('password');
 		
-		if (server == "" || username == "" || password == "")
+		if (server == null || server == "" || username == "" || password == "")
 		{
 			// cambio alla pagina option
 			$.mobile.changePage( $("#option"), "slide", true, true);
@@ -39,7 +39,8 @@
 			localStorage.setItem('server',server);
 			localStorage.setItem('username',username);
 			localStorage.setItem('password',password);
-			alert('Saved');
+			//alert('Saved');
+			$( "#popupSaved" ).popup("open");
 		}
 		else
 		{
