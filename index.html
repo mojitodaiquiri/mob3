@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="assets/images/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/touch-icon-iphone4.png" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="blue">
+		<title></title>
+		<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
+		<!-- Extra Codiqa features -->
+		<link rel="stylesheet" href="css/codiqa.ext.css">
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- personalizzazioni -->
+		<script src="js/personalizzazioni.js"></script>
+		<!-- jQuery Mobile -->
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+		<!-- Extra Codiqa features -->
+		<script src="js/codiqa.ext.js"></script>
+	</head>
+	<body>
+		<!-- Home -->
+		<div data-role="page" id="home">
+			<div data-theme="a" data-role="header">
+				<a id="btnOption" data-role="button" href="#option" data-icon="gear" data-iconpos="left"
+				class="ui-btn-right"> Option </a>
+				<h3> Prova option </h3>
+			</div>
+			<div data-role="content">
+				<h2> Main page </h2>
+				<h5> Questa e' la pagina principale, da qui inizia veramente l'applicazione </h5>
+			</div>
+		</div>
+		<!-- Home -->
+		<div data-role="page" id="option">
+			<div data-theme="a" data-role="header">
+				<a id="btnBack" data-role="button" href="#home" data-icon="back" data-iconpos="left"
+				class="ui-btn-right"> Back </a>
+				<h3> Pagina opzioni </h3>
+			</div>
+			<div data-role="content">
+				<form action="">
+					<h2> Opzioni </h2>
+					<div data-role="fieldcontain">
+						<label for="txtUrl"> server </label>
+						<input name="" id="txtUrl" placeholder="" value="http://myserver.com"
+						type="url">
+					</div>
+					<div data-role="fieldcontain">
+						<label for="textinput1"> username </label>
+						<input name="" id="txtUsername" placeholder="" value="" type="text">
+					</div>
+					<div data-role="fieldcontain">
+						<label for="textinput3"> password </label>
+						<input name="" id="txtPassword" placeholder="" value="" type="password">
+					</div>
+					<a data-role="button" id="btnSave" data-inline="true" href="#" data-icon="edit"
+					data-iconpos="left"> Save </a>
+				</form>
+			</div>
+		</div>
+		<!-- Logica applicativa -->
+		<script src="js/logic.js"></script>
+	</body>
+</html>
